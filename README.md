@@ -1,10 +1,17 @@
 # What's the point of this?
 
-In a time when many aspects of coding at the professional levels are being automated by AI tools, non-coders are being deterred from learning the basics, seeing it as unnecessary. The gap between those who have coding/technical experience and those who don't seems to be widening ... when, really, the opposite should be happening because of the power of the tools we have available to us.
+In 2026, there are many narratives circulating that roughly boil down to this: learning to code is useless in a world of people increasingly adopting AI tools that are coding-proficient.
 
-Part of the solution to this problem (the fact that people could very easily learn to code, but mostly don't) is contained in this repo. I have units on basic Python/coding topics, broken cleanly into units, and very roughly following the structure of Python Crash Course (Eric Matthes) with my own additions, including how to use AI tools to improve understanding, and some useful exercises. Enjoy!
+I think this narrative is misleading. I can think of at least 4 reasons why learning to code is still VERY useful and important, especially for those with no background:
 
-My selfish ulterior motive in doing this is that it'll give me a nice thorough review before I start working on more complex projects!
+1) The availability of AI tools hasn't eliminated the need for coding, but relocated it from writing to reading/directing/verifying it. For someone to do these things well, they still need practice writing it! Someone who has no understanding of codec cannot judge whether there is a mistake or something that can be improved! All good editors were once writers.
+
+2) Even if you're not interested in coding as a software engineer, knowing it can make you much stronger at your profession. With coding, a teacher can dig into a dataset of student test scores to see what skills they're rusty on; a journalist can now scrape webpages on their own rather than relying on others to bring them material. The examples are infinite.
+
+3) Coding with AI reduces the cost of building personal tools! I used it earlier today (in June 2026) to create a certain format for my To-Do list!
+
+4) It's mindblowing! Even basic coding will give you a better idea about how your computer and the internet work. There's no more social cost to asking "dumb" questions, which was something that deterred me from asking them when the time was ripe. Now that it's easier than ever to learn it, why not?
+
 
 ## A rough outline:
 
