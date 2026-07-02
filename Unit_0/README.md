@@ -48,19 +48,19 @@ To test that it actually worked and that it's now on your computer, open your te
 
 If the output says something like "Python 3.12.3" (or Python anything), you're good to go! 
 
-If not, this would be a good time to paste a screenshot of the output into your AI tool of choice (mine is Claude). Tell it that although tried to install Python by downloading it from Python's official website, it doesn't seem to be available, per the screenshot. Let it walk you through possible problems. 
+If not, this would be a good time to paste a screenshot of the output into your AI tool of choice (mine is Claude). Tell it that although you tried to install Python by downloading it from Python's official website, it doesn't seem to be available, per the screenshot. Let it walk you through possible problems. 
 
 There will be times throughout this course when things don't work as you expected. In these times, you'll be tempted to seek perfect answers to your questions so you can move on as fast as possible. Try to resist this urge, and only ask questions when you're truly stuck. Do it in a way that still lets you "do" the solution and remember it!
 
 #### Well, where do I write the code? 
 
-Once you have Python installed (and can verify it from your terminal), you can actually run it from there itself! It's waiting to execute your instructions. You'll soon realize that doing this is clunky and uncomfortable, like trying to send a novel's manuscriptas a copy-and-pasted iMessage.
+Once you have Python installed (and can verify it from your terminal), you can actually run it from there itself! It's waiting to execute your instructions. You'll soon realize that doing this is clunky and uncomfortable, like trying to send a novel's manuscript as a copy-and-pasted iMessage.
 
 A better way to do it is to write it in a specialized and powerful code editor, called an [IDE (integrated development environment)](https://www.ibm.com/think/topics/integrated-development-environment). An IDE is like Microsoft Word and Google Docs, but for code. A much better way to send a novel manuscript via text is to create a PDF of it, then send THAT via text, right?
 
 There are many options here, but my IDE of choice is called Visual Studio Code, which is known to its friends as VS Code! I love that it color-codes words so it's easy for you to spot typos, auto-completes, and has a built-in terminal! No need to understand the importance of these features just yet. We now need to download VS Code.
 
-Use [this link](https://code.visualstudio.com/download?_exp_download=fb315fc982). [Again, find the one for your system.]
+Use [this link](https://code.visualstudio.com/download?_exp_download=fb315fc982). Again, find the one meant for your system.
 
 #### Writing your first program
 
