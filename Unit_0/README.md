@@ -6,7 +6,7 @@
 - Explain how Python actually runs
 - Access the terminal
 - Install Python on your device
-- Decide where to write code (IDEs)
+- Decide where to write code (an IDE)
 - Write your first program
 - Use AI to deepen your understanding
 ______________________________________________________________________
@@ -15,9 +15,9 @@ ______________________________________________________________________
 
 #### What is Python?
 
-Python is a programming language! It's used to give instructions to a computer (which cannot understand our written English). [People love Python](https://www.python.org/doc/essays/blurb/) because it reads like English and it's versatile (used by both NASA scientists and game developers alike, for example)!
+Python is a programming language! It's used to give instructions to a computer (which cannot understand our written English). [People love Python](https://www.python.org/doc/essays/blurb/) because it reads like English and it's versatile (used by both NASA scientists and game developers alike, for example)! 
 
-It's considered what programmers call a "higher-level language" because of its proximity to English. Languages that are closer to machine-readable code are "lower level".
+On the spectrum of languages where the two extremes are a. machine-readable (completely incomprehensible to humans) and b. vernacular human language, Python is way closer to vernacular. Partly for this reason, it's considered a "high-level" language, while others that are less comprehensible to us are considered more "low-level". 
 
 #### How does it "run"?
 
@@ -27,6 +27,8 @@ When we write a program, we just write a plain text file (which is the same thin
 2) The interpreter reads the code and translates it into machine code
 3) Your computer, now able to understand the machine code, carries out those translated instructions
 4) You see the output on your screen (this could be anything, like a math problem or a set of words)
+
+It's a little more complicated than that, but that's the idea: it's a multi-step process that, if understood well, will help you understand why there are so many errors you can make it coding.
 
 #### The terminal
 
@@ -43,7 +45,7 @@ Follow the instructions. At some point, you'll be asked to check the box "Add py
 
 To test that it actually worked and that it's now on your computer, open your terminal and write
 
-'''python --version'''
+```python --version```
 
 If the output says something like "Python 3.12.3" (or Python anything), you're good to go! [Here's what mine looks like:](Unit_0/Images/image-1.png)
 
@@ -73,13 +75,13 @@ Save the file somewhere it'll be easy for you find later, like Documents or on D
 
 Here's your first program. Type this single line into your blank file exactly as it is here:
 
-'''print("Hello, world!")'''
+```print("Hello, world!")```
 
-Now save it! Hit Ctrl + S (Windows) or Cmd + S on Mac to save your progress. Now let's run it!
+Now save it by hitting Ctrl + S (Windows) or Cmd + S on Mac to save your progress. 
 
-Go back to your terminal window, and type this:
+Now let's run it! Go back to your terminal window, and type this:
 
-'''python hello.py''' 
+```python hello.py```
 
 Note that if you're on a Mac, it might be "python3" instead, but isn't for me. See if the first thing gives you grief. Does it say "Hello, world!" in the line below now?
 
@@ -99,17 +101,64 @@ ______________________________________________________________________
 
 #### The "file not saved" error
 
-- Sometimes, if you type code into VS Code, then try to run it on your laptop's terminal, you'll see an annoying "No such file or directory" error! This is trying to tell you that the file doesn't exist because THAT terminal window cannot find it
-- The rreason for this is that everything on your computer has a physical location, and if you point to a location for something and that thing's not there ... it may as well not exist
+- To understand the reason for this error, you have to understand that everything on your computer has a physical location: all files, folders, and the terminal itself. So if your terminal is currently in the "main user" folder but your hello.py file is currently in your Projects folder, the terminal won't be able to see it
+- This is like telling someone who's standing in your garage that "the book is on the night stand" (which is actually in your bedroom). They won't be able to find it, because the location is wrong!
+- To help with this confusion, it's often easier to use the terminal built into your VS Code, which will always be in the same directory (physical location) as the code you want to run (which is in a file, whose location is the same as the VS Code terminal)
+- Another option is to use the cd (change directory) terminal command to move to a different directory -- ideally, the one that your file is in. For example let's say your file lives in the Projects folder, which is within Desktop, but your terminal location is currently just in Desktop:
+
+``` pwd 
+    cd Projects
+    python hello.py ```
 
 This is a good place to turn to AI-- ask it to explain, simply, why it is that the terminal thinks the file doesn't exist. Try to figure out a solution, then prompt it again if you can't.
 ______________________________________________________________________
 
-
 ### Try it
+
+1. Repeat this process: create another file in the same folder called "goodbye.py", use another print() statement, save it, and run it both in the VS Code terminal and in the regular terminal.
+
+2. Python runs your code line-by-line from top to bottom. Use multiple ptint() statements to draw a smiley face that shows up in the terminal when you run it.
+
+3. Create another file called broken.py and put just one line in:
+
+```prnt("Hello, world!")``` 
+
+... there will be an error. Read it. What word does Python use to tell you it doesn't recognize your spelling of "print"?
 ______________________________________________________________________
 
 ### AI corner
+
+Remember: everything on your laptop (each thing is called a "file") has a location. There are 2 different ways to give instructions TO one of these locations: absolute and relative path.
+
+- An absolute path is the complete address of a file, starting from the very root of your computer's hard drive. It doesn't matter where your terminal is "currently standing" -- the root is the same. This is like giving someone GPS coordinates, which are the same no matter where you are in the world. An absolute path looks like this:
+
+```/Users/sheoli/Desktop/Projects/Teaching_Code/Unit_0/hello.py```
+
+- A relative path is directions FROM where your terminal currently is to a file. So if your terminal changes folders, a relative path will break unless you update your directions. This is like telling someone who you know is standing a block down from you to "walk up a block" to get to you. A relative path looks like this if your terminal is in the same folder a hello.py:
+
+```hello.py```
+
+Use an AI tool of your choice to figure out answers to these questions:
+
+- If you open your terminal, type "cd Desktop" and hit enter. Then open up a new terminal window (Cmd + N) and try to run hello.py (which should be saved on your Desktop). Does it work? Why or why not?
+
+- I have two different commands I could type into a Mac terminal to run a file. A: python /Users/student/Desktop/code/myscript.py and B:python myscript.py. Which of these two will work no matter which folder I'm currently in?
+
+- Look at these commands a programmer typed:
+
+```pwd
+Terminal prints: /Users/student/Documents
+cd Projects
+pwd
+# Terminal prints: /Users/student/Documents/Projects
+python hello.py
+# Terminal prints: No such file or directory```
+
+-   Based on the absolute paths printed by pwd, where on the computer is the terminal currently looking for hello.py? If the file is actually sitting out on the main Documents folder, how did the programmer accidentally break their relative path?
 ______________________________________________________________________
 
 ### What next?
+
+Now that we have the basic tools installed (Python and the IDE) and understand roughly how things run and how to find files, we can start working inside the IDE and writing more complex code than just "Hello, world!"
+
+Unit 1 will be about introducing how Python handles text and data without overwhelming computers.
