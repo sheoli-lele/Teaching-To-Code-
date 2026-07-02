@@ -104,11 +104,7 @@ ______________________________________________________________________
 - To understand the reason for this error, you have to understand that everything on your computer has a physical location: all files, folders, and the terminal itself. So if your terminal is currently in the "main user" folder but your hello.py file is currently in your Projects folder, the terminal won't be able to see it
 - This is like telling someone who's standing in your garage that "the book is on the night stand" (which is actually in your bedroom). They won't be able to find it, because the location is wrong!
 - To help with this confusion, it's often easier to use the terminal built into your VS Code, which will always be in the same directory (physical location) as the code you want to run (which is in a file, whose location is the same as the VS Code terminal)
-- Another option is to use the cd (change directory) terminal command to move to a different directory -- ideally, the one that your file is in. For example let's say your file lives in the Projects folder, which is within Desktop, but your terminal location is currently just in Desktop:
-
-``` pwd 
-    cd Projects
-    python hello.py ```
+- Another option is to use the cd (change directory) terminal command to move to a different directory -- ideally, the one that your file is in
 
 This is a good place to turn to AI-- ask it to explain, simply, why it is that the terminal thinks the file doesn't exist. Try to figure out a solution, then prompt it again if you can't.
 ______________________________________________________________________
