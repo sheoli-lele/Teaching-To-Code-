@@ -38,8 +38,7 @@ We'll come back to this in a second, after we actually get Python on our laptops
 
 #### Installing Python
 
-Download the latest version of Python: go to [this website](https://www.python.org/downloads/) and find the link for your specific machine:
-[alt text](image.png)
+Download the latest version of Python: go to [this website](https://www.python.org/downloads/) and find the link for your specific machine.
 
 Follow the instructions. At some point, you'll be asked to check the box "Add python.exe to PATH".
 
@@ -139,18 +138,6 @@ Use an AI tool of your choice to figure out answers to these questions:
 - If you open your terminal, type "cd Desktop" and hit enter. Then open up a new terminal window (Cmd + N) and try to run hello.py (which should be saved on your Desktop). Does it work? Why or why not?
 
 - I have two different commands I could type into a Mac terminal to run a file. A: python /Users/student/Desktop/code/myscript.py and B:python myscript.py. Which of these two will work no matter which folder I'm currently in?
-
-- Look at these commands a programmer typed:
-
-```pwd
-Terminal prints: /Users/student/Documents
-cd Projects
-pwd
-# Terminal prints: /Users/student/Documents/Projects
-python hello.py
-# Terminal prints: No such file or directory```
-
--   Based on the absolute paths printed by pwd, where on the computer is the terminal currently looking for hello.py? If the file is actually sitting out on the main Documents folder, how did the programmer accidentally break their relative path?
 ______________________________________________________________________
 
 ### What next?
