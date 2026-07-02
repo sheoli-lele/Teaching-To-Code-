@@ -28,7 +28,7 @@ When we write a program, we just write a plain text file (which is the same thin
 3) Your computer, now able to understand the machine code, carries out those translated instructions
 4) You see the output on your screen (this could be anything, like a math problem or a set of words)
 
-It's a little more complicated than that, but that's the idea: it's a multi-step process that, if understood well, will help you understand why there are so many errors you can make it coding.
+It's a little more complicated than that, but that's the idea: it's a multi-step process that, if understood well, will help you understand why there are so many errors you can make in coding.
 
 #### The terminal
 
@@ -46,7 +46,7 @@ To test that it actually worked and that it's now on your computer, open your te
 
 ```python --version```
 
-If the output says something like "Python 3.12.3" (or Python anything), you're good to go! [Here's what mine looks like:](Unit_0/Images/image-1.png)
+If the output says something like "Python 3.12.3" (or Python anything), you're good to go! 
 
 If not, this would be a good time to paste a screenshot of the output into your AI tool of choice (mine is Claude). Tell it that although tried to install Python by downloading it from Python's official website, it doesn't seem to be available, per the screenshot. Let it walk you through possible problems. 
 
@@ -60,13 +60,11 @@ A better way to do it is to write it in a specialized and powerful code editor, 
 
 There are many options here, but my IDE of choice is called Visual Studio Code, which is known to its friends as VS Code! I love that it color-codes words so it's easy for you to spot typos, auto-completes, and has a built-in terminal! No need to understand the importance of these features just yet. We now need to download VS Code.
 
-Use [this link](https://code.visualstudio.com/download?_exp_download=fb315fc982). [Again, find the one for your system.](Unit_0/Images/image-2.png)
+Use [this link](https://code.visualstudio.com/download?_exp_download=fb315fc982). [Again, find the one for your system.]
 
 #### Writing your first program
 
-The first thing you want to do is create a new file. Look in the top left corner of your screen:
-
-- [File > New File](Unit_0/Images/image-3.png)
+The first thing you want to do is create a new file. Look in the top left corner of your screen.
 
 A small box will pop up, asking you to name it. Name it hello.py, then hit Enter. This .py extension is important here, because it tells VS Code that what you're doing is a Python "script" (a set of instructions) and that it should turn on those beautiful code-helper tools like the color-coding!
 
@@ -96,7 +94,7 @@ ______________________________________________________________________
 
 #### Forgetting to save before running
 
-- Remember that the computer runs the SAVED file, not just the text active on the screen at that moment.[VS Code will show you a solid white circle, which indicates that your code is unsaved:](iUnit_0/Images/image-4.png). The dot disappears once you save the file (Command + S on Mac).
+- Remember that the computer runs the SAVED file, not just the text active on the screen at that moment.[VS Code will show you a solid white circle, which indicates that your code is unsaved:]. The dot disappears once you save the file (Command + S on Mac).
 
 #### The "file not saved" error
 
